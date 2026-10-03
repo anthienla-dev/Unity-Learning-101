@@ -14,38 +14,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1790862683
+  lastShownTimestamp: 1791037793
   lastUpdateResponse:
-    version: 1.00
+    version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1790862683
+  checkedLastUpdateTimestamp: 1791037793
   lastQOTDResponse:
-    questionId: 163
-    questionText: What is the purpose of Unity Hub?
-    answerA: Provide a space for the community to interact
-    answerB: Manage different Unity versions and Projects
-    answerC: Dashboard for Unity services
+    questionId: 348
+    questionText: 'Let''s say I saved my game data in a text file and I am now trying to load it, does this work?
+
+      <p>string savedHealthData = "100";</p>
+
+      <p>int healthAmount = savedHealthData;</p>'
+    answerA: Yes
+    answerB: No
+    answerC: Yes but healthAmount will be 0
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1790862683
+  lastQotdTimestamp: 1791037793
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleBundleSyntyMar25.png
-    topText: Make ANY game with these awesome Assets! (96% OFF ENDS SOON!)
-    topLink: humblebundle
-    bottomText: Learn Unity DOTS for MASSIVE Performance Boosts! (and make an RTS)
-    bottomLink: dotscourse
-  lastDynamicHeaderTimestamp: 1790862683
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/codeMonkeyToolkit50Off.png
+    topText: My Toolkit is 50% OFF! 50+ Tools and Elements to help you make games BETTER and FASTER!
+    topLink: toolkit
+    bottomText: Escape Tutorial Hell and level up your skills, try my Practice Lab for FREE!
+    bottomLink: practicelab
+  lastDynamicHeaderTimestamp: 1791037793
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses! Click here!</a>
-  websiteLatestMessageTimestamp: 1790862683
+  websiteLatestMessageTimestamp: 1791037793
   websiteLatestVideos:
     videos:
-    - youTubeId: ZIg7VoD9ptI
-      title: The FUTURE of Unity in 2025 and BEYOND!
-    - youTubeId: W_XOZAWJF24
-      title: I made the MOST PROFITABLE Game as a Test!
-    - youTubeId: J0KMvH-yFmA
-      title: TOP 10 NEW Games, Made with Unity! (FEBRUARY 2025)
-    - youTubeId: DOSLOa7cnoE
-      title: I SHOULD have done this a long time ago, and YOU too!
-  websiteLatestVideosTimestamp: 1790862683
+    - youTubeId: TPNjjCOjxB4
+      title: How to Change Unity Graphics Settings Through Code! (Unity Tutorial)
+    - youTubeId: sA8mwU_-OXc
+      title: BEST NEW Visual Assets to INSPIRE YOU! (SEPTEMBER 2026)
+    - youTubeId: MotmZgCod9A
+      title: MASSIVE Unity Save System Tutorial!
+    - youTubeId: A9Qlll9dDkY
+      title: TOP 10 NEW Systems and Tools SEPTEMBER 2026! | Unity Asset Store
+  websiteLatestVideosTimestamp: 1791037793
