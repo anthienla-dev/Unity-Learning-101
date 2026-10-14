@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1791560087
+  lastShownTimestamp: 1791784065
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1791560087
+  checkedLastUpdateTimestamp: 1791784065
   lastQOTDResponse:
     questionId: 350
     questionText: 'What is the value stored in percentage?
@@ -33,17 +33,17 @@ MonoBehaviour:
     answerC: 2.5f
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1791560087
+  lastQotdTimestamp: 1791784065
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleSep26Synty.png
     topText: AWESOME Synty Asset with THOUSANDS of great assets!
     topLink: humblebundle
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1791560087
+  lastDynamicHeaderTimestamp: 1791784065
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses! Click here!</a>
-  websiteLatestMessageTimestamp: 1791560087
+  websiteLatestMessageTimestamp: 1791784065
   websiteLatestVideos:
     videos:
     - youTubeId: trDO2Io6D2M
@@ -54,4 +54,4 @@ MonoBehaviour:
       title: Does 1000 Wishlists at announcement mean $1,000,000?
     - youTubeId: TPNjjCOjxB4
       title: How to Change Unity Graphics Settings Through Code! (Unity Tutorial)
-  websiteLatestVideosTimestamp: 1791560087
+  websiteLatestVideosTimestamp: 1791784065

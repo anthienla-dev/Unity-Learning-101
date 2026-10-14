@@ -27,5 +27,6 @@ public class PlayerController : MonoBehaviour
         movementVector = movementVector.normalized;
         Vector3 moveDir = new Vector3(movementVector.x, 0f, movementVector.y);
         transform.position += moveDir * Time.deltaTime * moveSpeed;
+        transform.forward = moveDir; //Easiest rotation
     }
 }

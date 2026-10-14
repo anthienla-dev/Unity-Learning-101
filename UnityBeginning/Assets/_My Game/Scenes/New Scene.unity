@@ -655,7 +655,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95176a5c48059cb418afc6c86e068d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExerciseController
-  moveSpeed: 1
+  moveSpeed: 15
+  dashSpeed: 30
+  dashTimeRemaining: 3.5
+  dashCooldown: 1.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

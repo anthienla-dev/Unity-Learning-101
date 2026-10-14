@@ -5,10 +5,10 @@ public class ExerciseController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 1;
     private bool isDashing = false;
-    private float dashTime = 0.5f;
     private Vector3 dashDirection = new Vector3(0,0,0);
     [SerializeField] private float dashSpeed = 30;
     [SerializeField]private float dashTimeRemaining = 3.5f;
+    [SerializeField] private float dashCooldown = 1.5f;
     private void Update()
     {
         Vector2 movementVector = GetWASDInput();// Gold standard for WASD input
@@ -16,8 +16,12 @@ public class ExerciseController : MonoBehaviour
         Vector3 moveDir = new Vector3(movementVector.x, 0f, movementVector.y);
         transform.position += moveDir * moveSpeed * Time.deltaTime;
 
+        //Cooldown countdown
+        dashCooldown = Mathf.Clamp(dashCooldown - 1, 0, 9999);
+
+
         //Sprinting mechanic
-        if(Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.LeftControl))
         {
             float currentSpeed = moveSpeed * 2; //because supplanting moveSpeed *2 to the equation directly would stack it with the earlier transform.position
             transform.position += moveDir * currentSpeed * Time.deltaTime;
@@ -28,12 +32,13 @@ public class ExerciseController : MonoBehaviour
             dashDirection = moveDir;
             isDashing = true;
             dashTimeRemaining = 3.5f; //Reset dashTimeRemaining so it won't be stuck in 0
+            dashCooldown = 1.5f;
         }
         if(isDashing)
         {
             transform.position += dashDirection * dashSpeed * Time.deltaTime;
-            //dashSpeed = dashSpeed/2; //This is equivalent to subtracting a VERY small amount from dashSpeed each update. Thats linear decelleration
-            dashTimeRemaining = Mathf.Clamp(dashTimeRemaining - 10 * Time.deltaTime,0, 9999);
+            dashTimeRemaining = Mathf.Clamp(dashTimeRemaining - 10 * Time.deltaTime, 0, 9999);
+
             Debug.Log(dashTimeRemaining);
             if (dashTimeRemaining == 0)
             {
@@ -41,7 +46,13 @@ public class ExerciseController : MonoBehaviour
 
             }
         }
-//# TODO: Finish the Dash mechanic. Push to Github
+        if (dashCooldown == 0)
+        {
+            isDashing = true;
+        }
+
+
+        //# TODO: Finish the Dash mechanic. Push to Github
 
 
 
