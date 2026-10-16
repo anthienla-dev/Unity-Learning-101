@@ -14,44 +14,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1791784065
+  lastShownTimestamp: 1792116748
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1791784065
+  checkedLastUpdateTimestamp: 1792116748
   lastQOTDResponse:
-    questionId: 350
-    questionText: 'What is the value stored in percentage?
+    questionId: 352
+    questionText: 'What is the position of the transform after running this code?
 
-      <p>int health = 25;</p>
+      <p>Vector3 targetPosition = new Vector3(10, 0, 0);</p>
 
-      <p>int healthMax = 100;</p>
+      <p>transform.position = targetPosition;</p>
 
-      <p>float percentage = health / healthMax;</p>'
-    answerA: 0.25f
-    answerB: 0
-    answerC: 2.5f
+      <p>targetPosition.x = 20;</p>'
+    answerA: (10, 0, 0)
+    answerB: (20, 0, 0)
+    answerC: Unknown
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1791784065
+  lastQotdTimestamp: 1792116748
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleSep26Synty.png
     topText: AWESOME Synty Asset with THOUSANDS of great assets!
     topLink: humblebundle
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1791784065
+  lastDynamicHeaderTimestamp: 1792116748
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses! Click here!</a>
-  websiteLatestMessageTimestamp: 1791784065
+  websiteLatestMessageTimestamp: 1792116748
   websiteLatestVideos:
     videos:
+    - youTubeId: HD1wNUTZ0_Y
+      title: Sell 25,000 copies in 24 HOURS? Steam's Update EXPLAINED!
+    - youTubeId: OzldphY8pTs
+      title: THIS is why your game looks TERRIBLE!
+    - youTubeId: o4WEUv31JOc
+      title: If your code is HORRIBLE watch this!
     - youTubeId: trDO2Io6D2M
       title: What is Unity Spark?
-    - youTubeId: iwDBrvKliV8
-      title: You should do the Dual Prototyping Strategy!
-    - youTubeId: mQTcWsiP9nA
-      title: Does 1000 Wishlists at announcement mean $1,000,000?
-    - youTubeId: TPNjjCOjxB4
-      title: How to Change Unity Graphics Settings Through Code! (Unity Tutorial)
-  websiteLatestVideosTimestamp: 1791784065
+  websiteLatestVideosTimestamp: 1792116748
