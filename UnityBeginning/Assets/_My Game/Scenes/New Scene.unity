@@ -306,6 +306,7 @@ GameObject:
   - component: {fileID: 895239071}
   - component: {fileID: 895239070}
   - component: {fileID: 895239073}
+  - component: {fileID: 895239074}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -380,13 +381,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895239069}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3097565, y: 0.018254377, z: -0.005948103, w: 0.9506221}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.44854605, y: 11.662169, z: -14.021143}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &895239073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,6 +432,20 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &895239074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895239069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6b817178f8ba841863d1e03e59e35a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  PlayerPosition: {fileID: 2085903775}
+  offset: {x: 0, y: 20, z: 0}
 --- !u!1 &1115834983
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,8 +618,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95176a5c48059cb418afc6c86e068d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExerciseController
-  moveSpeed: 1
+  moveSpeed: 10
   rotationSpeed: 15
+  clampWall: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
