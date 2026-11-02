@@ -6,6 +6,7 @@ public class ExerciseController : MonoBehaviour
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float rotationSpeed = 10f;
     [SerializeField] private int clampWall = 3;
+    private bool isMoving;
     private void Update()
     {
         Vector2 movementVector = GetWASDInput();// Gold standard for WASD input
@@ -25,6 +26,8 @@ public class ExerciseController : MonoBehaviour
         //Arena boundary, using Clamp.
         //clamp each x,y,z
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -clampWall, clampWall),transform.position.y, Mathf.Clamp(transform.position.z, -clampWall, clampWall));
+        //Setting isMoving boolean
+        isMoving = moveDir != Vector3.zero;
     }
     private Vector2 GetWASDInput() //the RETURN method. Gold Standard
     {
@@ -47,4 +50,9 @@ public class ExerciseController : MonoBehaviour
         }
         return tempVect; //!important
     }
+    public bool IsMoving() //Getter method
+    {
+        return isMoving;
+    }
 }
+
