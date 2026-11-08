@@ -13,6 +13,7 @@ public class ExerciseController : MonoBehaviour
     [SerializeField] private int dashSpeed = 5;
     [SerializeField] private float dashCooldown = 1;
     [SerializeField] private float cooldownTimer = 1;
+    [SerializeField] private Animator animator;
     private void Update()
     {
         Vector2 movementVector = GetWASDInput();// Gold standard for WASD input
@@ -40,6 +41,7 @@ public class ExerciseController : MonoBehaviour
         {
             isDashing = true;
             dashTimer = 0.2f; //Reset dash timer
+            animator.SetTrigger("DashActivated"); //THIS CONNECTS WITH ANIMATOR. Peak OOP
         }
         if (isDashing)
         {
@@ -78,6 +80,10 @@ public class ExerciseController : MonoBehaviour
     public bool IsMoving() //Getter method
     {
         return isMoving;
+    }
+    public bool IsDashing()
+    {
+        return isDashing;
     }
 }
 

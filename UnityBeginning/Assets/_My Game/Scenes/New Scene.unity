@@ -606,6 +606,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExerciseAnimator
   controller: {fileID: 2085903775}
+--- !u!95 &1476196387 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6024899996280613204, guid: 1c5dda3c7cd3cf742afcade5419faeab, type: 3}
+  m_PrefabInstance: {fileID: 327778030}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2085903773
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +659,11 @@ MonoBehaviour:
   moveSpeed: 5
   rotationSpeed: 15
   clampWall: 100
+  dashTimer: 0.1
+  dashSpeed: 5
+  dashCooldown: 1
+  cooldownTimer: 1
+  animator: {fileID: 1476196387}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
